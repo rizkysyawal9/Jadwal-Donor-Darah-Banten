@@ -22,9 +22,14 @@ const getDates = async (keyword) => {
         const proxy = "https://cors-anywhere.herokuapp.com/"
         const response = await fetch(proxy + `${baseUrl}&tanggal=${keyword}${provinsi}`)
         const responseJson = await response.json()
-        if(responseJson.error){
+        //Tanggal yang tidak tersedia di API mengembalikan status:error
+        if(responseJson.status == "error"){
+            showResponse("Tanggal Tidak Tersedia")
+            renderEmpty()
+        }
+        else if(responseJson.error){
             showResponse(responseJson.message)
-        } else {
+        }else {
             render(responseJson.data)
         }
     } catch(error){
@@ -32,9 +37,16 @@ const getDates = async (keyword) => {
     }
 }
 
+
+
 const showResponse = (message = "Check your internet Connection") =>{
     alert(message)
 }
+
+const renderEmpty = () => {
+    placeListElement.innerHTML = `<p>Tanggal tersebut tidak tersedia</p>`
+}
+
 
 const render = (data) => { 
     placeListElement.innerHTML = ""
