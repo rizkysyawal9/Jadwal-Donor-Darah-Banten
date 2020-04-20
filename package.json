@@ -1,0 +1,32 @@
+{
+  "name": "donor-darah-banten",
+  "version": "1.0.0",
+  "description": "Dibuat dengan :heart: menggunakan HTML, CSS, Vanilla Javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./dist",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkysyawal9/Jadwal-Donor-Darah-Banten.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizkysyawal9/Jadwal-Donor-Darah-Banten/issues"
+  },
+  "homepage": "https://github.com/rizkysyawal9/Jadwal-Donor-Darah-Banten#readme",
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "prettier": "2.0.4",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  }
+}

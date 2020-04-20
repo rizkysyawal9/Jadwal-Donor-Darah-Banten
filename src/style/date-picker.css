@@ -23,3 +23,20 @@
     opacity: 0;
   height: 24px;
   }
+
+  @media screen and (max-width: 500px){
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #datebtn{
+      margin-right: 12px;
+    }
+    
+    #datePicker{
+      margin-bottom: 16px;
+    }
+
+  }
