@@ -1,4 +1,7 @@
 //Url API
+import './src/script/components/app-header.js'
+import './src/script/components/date-picker.js'
+
 const baseUrl = "https://sites.google.com/macros/exec?service=AKfycbxENZUqbOHUz7c7CevxlMJMkjxRMtP5rRim-SjFwcLSO9UDiBk"
 const provinsi = "&provinsi=Banten"
 

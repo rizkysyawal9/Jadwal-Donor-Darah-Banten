@@ -8,19 +8,13 @@
 </head>
 <body>
     <header>
+        <app-header></app-header>
     </header>
     <main>
-        <div class="container">
-            <h1>Jadwal donor darah daerah Banten</h1>
-            <p>Pilih Tanggal</p>
-            <br>
-            <input type="date" name="dateofbirth" id="datePicker">
-            <input type="button" value="Search" id="datebtn">
-            <p class="getDate"></p>
-        </div>
+        <date-picker></date-picker>
             <div id="placeList"></div>
     </main>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="./app.js" type="module"></script>
 </body>
 </html>
