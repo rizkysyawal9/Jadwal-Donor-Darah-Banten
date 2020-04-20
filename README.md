@@ -10,7 +10,7 @@ npm install
 
 Untuk ngejalanin web, run script ini
 ```
-npm run http-server ./dist
+npm run start
 ```
 
 Tidak dapat digunakan di Browser Safari
